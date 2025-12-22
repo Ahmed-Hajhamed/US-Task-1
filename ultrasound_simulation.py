@@ -53,11 +53,8 @@ class UltrasoundSimulator:
                 # Calculate sample index
                 sample_idx = int(time_delay * self.fs)
                 
-                # Add pulse to RF data with appropriate attenuation
-                attenuation = 1.0 / (distance + 0.001)  # Simple geometric spreading
-                
                 if sample_idx + len(pulse) < num_samples:
-                    rf_data[sample_idx:sample_idx+len(pulse), elem_idx] += pulse * attenuation
+                    rf_data[sample_idx:sample_idx+len(pulse), elem_idx] += pulse
     
         return rf_data, time_axis
     

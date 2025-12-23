@@ -61,7 +61,7 @@ def plot_bmode(data, filename_base):
     bmode_db = db_scale(envelope)
     extent = [x_axis[0], x_axis[-1], z_axis[-1], z_axis[0]]
     
-    plt.imshow(bmode_db, extent=extent, cmap='gray', aspect='equal', vmin=-60, vmax=0)
+    plt.imshow(bmode_db, extent=extent, cmap='gray', aspect='equal', vmin=-40, vmax=0)
     plt.colorbar(label='Amplitude (dB)')
     
     plt.title(f"B-Mode: {freq_lbl}, {depth_lbl} Target")

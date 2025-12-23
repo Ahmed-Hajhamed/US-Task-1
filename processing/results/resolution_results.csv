@@ -1,0 +1,7 @@
+Frequency,Depth (mm),Axial FWHM (mm),Lateral FWHM (mm)
+3.0 MHz,20,0.316,0.487
+3.0 MHz,40,0.313,0.357
+3.0 MHz,60,0.308,0.5
+7.5 MHz,20,0.124,0.197
+7.5 MHz,40,0.125,0.144
+7.5 MHz,60,0.124,0.198
